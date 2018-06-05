@@ -16,8 +16,8 @@ componentWillMount(){
   axios
      .get('https://origin-top-spots-api.herokuapp.com/api/topspots')
      .then(function(response){
-       const zipData = response.data;
-       this.setState({ topspots: topspots })
+      const zipData = response.data;
+      this.setState({ topspots: zipData })
      }.bind(this))
 
   //  equivalent to:
